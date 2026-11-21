@@ -16,7 +16,12 @@
 
         context {
             bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <49 48>;
+            key-positions = <48 47>;
+        };
+
+        CtrlShift {
+            bindings = <&kp RS(RCTRL)>;
+            key-positions = <48 49>;
         };
     };
 
@@ -47,7 +52,7 @@
         layer_1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LG(LEFT))  &kp LG(LC(RIGHT))  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2          &mkp (LCLK|RCLK)          &kp LG(TAB)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2          &mkp               &kp LG(TAB)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans       &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans             &trans       &trans
             >;
@@ -57,8 +62,8 @@
             bindings = <
 &kp ESCAPE  &kp N1    &kp N2            &kp N3    &kp N4      &kp N5     &kp N6     &kp N7         &kp N8     &kp N9          &kp N0            &kp INT_YEN
 &trans      &kp EXCL  &kp LEFT_BRACKET  &kp HASH  &kp DOLLAR  &kp PRCNT  &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp SEMICOLON   &kp SINGLE_QUOTE  &kp SLASH
-&trans      &trans    &trans            &trans    &trans      &trans     &trans     &trans         &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp QUESTION  &mt (RC(RIGHT_SHIFT)) LS(INT_RO)
-&trans      &trans    &trans            &trans    &trans      &trans     &trans     &trans         &trans     &trans          &trans            &kp RCTRL
+&trans      &trans    &trans            &trans    &trans      &trans     &trans     &trans         &kp TILDE  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp QUESTION  &kp LS(INT_RO)
+&trans      &trans    &trans            &trans    &trans      &trans     &trans     &trans         &trans     &trans          &trans            &trans
             >;
         };
 
